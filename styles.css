@@ -1,0 +1,144 @@
+/* General styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(112, 145, 214);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Aside styling */
+
+.left1, .right1 {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    min-width: 250px;
+}
+
+.left1 h1, .right1 h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+/* Main content styling */
+
+.main1 {
+    flex: 2;
+    background: white;
+    padding: 25px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    min-width: 300px;
+}
+
+.main1 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.section1 p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.content-wrapper {
+    margin-bottom: 25px;
+}
+
+.content-wrapper2 {
+    margin-top: 15px;
+}
+
+.img1 {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 6px;
+}
+
+/* Images inside asides */
+
+.left1 img, .right1 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 0 auto;
+    border-radius: 6px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #555;
+    color: white;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+/* Responsive design */
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .left1, .main1, .right1 {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+    .main1 h1, .left1 h1, .right1 h1 {
+        font-size: 1.4rem;
+    }
+}
